@@ -1,0 +1,7 @@
+const express=require("express");
+const router = express.Router();
+
+const userController=require("../controlers/user_controllers");
+
+router.get('/profile',userController.profile);
+module.exports=router;
